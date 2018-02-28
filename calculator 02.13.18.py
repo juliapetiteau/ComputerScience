@@ -1,6 +1,5 @@
 import math
 import random
-from math import sqrt
 
 def welcome( ):
     menu= input("Welcome! Press 1 for basic operation and Press 2 for more advanced operations")
@@ -58,6 +57,9 @@ cir for area of a circle
 rec for area of a rectangle
 tri for area of a triangle
 pent for area of a pentagon
+cos for cosine of x
+tan for tangent of x
+sin for sine of x
 ''')
 
     if operation_adv == 'cir':
@@ -88,6 +90,21 @@ pent for area of a pentagon
         area_of_pent = (apothem * perimeter) /2
         print( area_of_pent)
 
+    elif  operation_adv == "cos":
+        x = float(input("Please enter the value of x:"))
+        cos = math.cos(x)
+        print(cos)
+        
+    elif  operation_adv == "tan":
+        x = float(input("Please enter the value of x:"))
+        tan = math.tan(x)
+        print(tan)
+
+    elif  operation_adv == "sin":
+        x = float(input("Please enter the value of x:"))
+        sin = math.sin(x)
+        print(sin)
+        
     else:
         print("You have not typed a valid operator. Run program again")
         runagain( )
